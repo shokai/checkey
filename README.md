@@ -2,6 +2,10 @@
 
 check keys existence.
 
+- https://github.com/shokai/checkey
+- https://npmjs.com/package/checkey
+
+[![CircleCI](https://circleci.com/gh/shokai/checkey.svg?style=svg)](https://circleci.com/gh/shokai/checkey)
 
 ## Usage
 
