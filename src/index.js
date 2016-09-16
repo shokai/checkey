@@ -1,2 +1,2 @@
-export default function checkey (obj, schema) {
-}
+import {checkey} from './checkey'
+module.exports = checkey
