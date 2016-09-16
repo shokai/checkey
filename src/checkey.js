@@ -1,4 +1,4 @@
-import {uniq} from 'lodash'
+import {uniq} from './util'
 import Result from './result'
 
 const DEFAULT_SCHEMA = {
