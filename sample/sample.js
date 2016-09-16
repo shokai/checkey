@@ -3,8 +3,8 @@ var checkey = require('../')
 
 // define schema which require "name", permit "name" & "web" & "mail"
 var schema = {
-  require: [ 'name' ],
-  permit: [ 'web', 'mail' ]
+  require: ['name'],
+  permit: ['web', 'mail']
 }
 
 // valid object
