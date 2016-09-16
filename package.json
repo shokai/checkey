@@ -1,7 +1,7 @@
 {
   "name": "checkey",
   "version": "1.0.0",
-  "description": "check object keys existence",
+  "description": "check keys existence.",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src/ --out-dir lib/ --minified --source-maps inline",
