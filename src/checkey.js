@@ -15,8 +15,7 @@ export function checkey (obj, schema) {
     throw new Error('Argument Error: "require" is not an Array')
   }
   permit = uniq(permit.concat(require))
-  const keys = Object.keys(obj)
-  let result = new Result()
+  const result = new Result()
 
   // check require
   for (let k of require) {
@@ -26,7 +25,7 @@ export function checkey (obj, schema) {
   }
 
   // check non-permit key
-  for (let k of keys) {
+  for (let k of Object.keys(obj)) {
     if (permit.indexOf(k) < 0) {
       result.errors.push(`not permit "${k}"`)
     }
