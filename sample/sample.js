@@ -29,4 +29,3 @@ var result3 = checkey({
 }, schema)
 console.log('result3 is valid => ', result3.isValid)
 console.log(result3.errors)
-
