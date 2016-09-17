@@ -20,14 +20,14 @@ export function checkey (obj, schema) {
   // check require
   for (let k of require) {
     if (!obj.hasOwnProperty(k)) {
-      result.errors.push(`require "${k}"`)
+      result.errors.push(new Error(`require "${k}"`))
     }
   }
 
   // check non-permit key
   for (let k of Object.keys(obj)) {
     if (permit.indexOf(k) < 0) {
-      result.errors.push(`not permit "${k}"`)
+      result.errors.push(new Error(`not permit "${k}"`))
     }
   }
   return result
