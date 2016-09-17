@@ -1,6 +1,6 @@
 {
   "name": "checkey",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "check keys existence.",
   "main": "lib/index.js",
   "scripts": {
