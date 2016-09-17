@@ -25,5 +25,16 @@
     "mocha": "^3.0.2",
     "standard": "^8.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shokai/checkey.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shokai/checkey/issues"
+  },
+  "homepage": "https://github.com/shokai/checkey#readme"
 }
