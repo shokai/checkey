@@ -1,5 +1,6 @@
 import {uniq} from './util'
 import Result from './result'
+import {CheckeyError} from './error'
 
 const DEFAULT_SCHEMA = {
   permit: [],
@@ -20,14 +21,14 @@ export function checkey (obj, schema) {
   // check require
   for (let k of require) {
     if (!obj.hasOwnProperty(k)) {
-      result.errors.push(new Error(`require "${k}"`))
+      result.errors.push(new CheckeyError(`require "${k}"`))
     }
   }
 
   // check non-permit key
   for (let k of Object.keys(obj)) {
     if (permit.indexOf(k) < 0) {
-      result.errors.push(new Error(`not permit "${k}"`))
+      result.errors.push(new CheckeyError(`not permit "${k}"`))
     }
   }
   return result
