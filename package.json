@@ -12,7 +12,11 @@
     "clean": "rm -rf lib/"
   },
   "keywords": [
-    "validate", "validation", "strong parameters", "mass assignment", "whitelist"
+    "validate",
+    "validation",
+    "strong parameters",
+    "mass assignment",
+    "whitelist"
   ],
   "author": "Sho Hashimoto <hashimoto@shokai.org>",
   "license": "MIT",
