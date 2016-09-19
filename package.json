@@ -4,7 +4,7 @@
   "description": "Check Keys existence with whitelist, like rails/strong_parameters.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel src/ --out-dir lib/ --minified --source-maps inline",
+    "build": "babel src/ --out-dir lib/ --source-maps inline",
     "watch": "npm run build -- --watch",
     "mocha": "mocha 'test/*.js' -r babel-polyfill --compilers js:babel-register",
     "standard": "standard",
