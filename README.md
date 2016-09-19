@@ -1,6 +1,6 @@
 # ChecKey
 
-check keys existence.
+Check Keys existence with whitelist, like [rails/strong_parameters](https://github.com/rails/strong_parameters).
 
 - https://github.com/shokai/checkey
 - https://npmjs.com/package/checkey

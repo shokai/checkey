@@ -1,7 +1,7 @@
 {
   "name": "checkey",
   "version": "0.1.1",
-  "description": "check keys existence.",
+  "description": "Check Keys existence with whitelist, like rails/strong_parameters.",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src/ --out-dir lib/ --minified --source-maps inline",
@@ -12,7 +12,11 @@
     "clean": "rm -rf lib/"
   },
   "keywords": [
-    "validate"
+    "validate",
+    "validation",
+    "strong parameters",
+    "mass assignment",
+    "whitelist"
   ],
   "author": "Sho Hashimoto <hashimoto@shokai.org>",
   "license": "MIT",
