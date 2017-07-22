@@ -42,6 +42,28 @@ console.log('result3 is valid => ', result3.isValid) // false
 console.log(result3.errors) // [ 'require "name"', 'not permit "fullname"' ]
 ```
 
+mass-assignment with mongoose and express
+
+```javascript
+const User = mongoose.model('User')
+
+async function updateUser (req, res) {
+  const checkeyResult = checkey(req.body, {
+    require: ['name'],
+    permit: ['mail', 'screen_name', 'description']
+  })
+  if (checkeyResult.isInvalid) {
+    res.status(400).json({errors: checkeyResult.errors})
+  }
+  try {
+    await User.update(req.body, {runValidators: true})
+    res.json({success: true})
+  } catch (err) {
+    res.status(400).json({errors: [err.message]})
+  }
+}
+```
+
 
 ## Develop
 
